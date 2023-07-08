@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Task</title>
+  <link rel="icon" type="image/jpg" href="./images/Tulips.jpg ">
+  <style>
+    body {
+      background-color: rgb(77, 77, 77);
+      color: antiquewhite;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="./index.html" style="color: rgb(250, 235, 215);">Home</a><br></li>
+      <li><a href="../demo/HTMLs/page2.html" style="color: antiquewhite;">About</a><br></li>
+      <li><a href="./second.html" style="color: hsl(35, 83%, 91%);">Contact Us</a></li><br>
+    </ul>
+  </nav>
+  <main>
+  <h1>This is contact page</h1>
+  <form action="./index.html" method="post">
+    <span>User name </span><input type="text" name="user_name" required placeholder="Enter your name"><br><br>
+    <span>Email </span><input type="email" name="email" required placeholder="Enter your email"><br><br>
+    <span>Password </span><input type="password" name="password" required placeholder="Enter your password"><br><br>
+    <span>Age</span><input type="number" name="age" required placeholder="Enter your age"><br><br>
+    <input type="file" name="file" accept=".pdf">
+    <hr>
+    <h3>Choose your gender</h3>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">female</label><br>
+
+    <h3>Choose your Language</h3>
+    <input type="checkbox" name="language" id="english" value="english">
+    <label for="english">English</label><br>
+    <input type="checkbox" name="language" id="arabic" value="arabic">
+    <label for="arabic">Arabic</label><br>
+    <hr>
+    <h3>Choose your Color</h3>
+    <input type="color" name="color" id="color"><br>
+    <input type="date" name="date" id="date"><br>
+    <input type="datetime-local" name="" id=""><br>
+    <input type="month" name="time" id="time">
+    <br>
+    <hr>
+    <input type="checkbox" name="checkbox" id="checkbox" required>
+    <label for="checkbox">I agree all terms and conditions</label><br><br>
+    <input type="submit" value="Agree"><br>
+    <hr>
+    <h3>Fill This to go to another page</h3>
+  </form>
+</main>
+</body>
+
+</html>
