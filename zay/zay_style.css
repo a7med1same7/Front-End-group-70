@@ -1,0 +1,387 @@
+/*********************************GLOBAL STYLE*********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+:root{
+  --top_bg: hsl(215deg 22% 17%);
+  --top_font: hsl(212deg 34% 60%);
+  --white: hsl(0, 0%, 100%);
+  --header_bg: hsl(0, 0%, 94%);
+  --brand_color:hsl(135deg 33% 51%);
+  --rating_color:hsl(58deg 80% 65%);
+  --non_rating:hsl(0deg 0% 74%);
+  --light_color:hsl(215deg 25% 76%);
+  --footer_bg:hsl(215deg 22% 17%);
+  --footer_color:hsl(217deg 23% 85%);
+  --last_footer:hsl(214deg 22% 15%);
+}
+
+
+.container{
+  width: 85%;
+  margin: auto;
+}
+
+.float_parent>* {
+  float: left;
+}
+
+.float_parent::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+p{
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.rating{
+  color: var(--rating_color);
+}
+
+.non_rating{
+  color: var(--non_rating);
+}
+
+ul{
+  list-style: none;
+}
+/*********************************END GLOBAL STYLE*********************************/
+
+.top{
+  background-color: var(--top_bg);
+  color: var(--footer_color);
+  padding: 10px 0;
+}
+
+.top .mail,
+.top .phone,
+.top .left{
+  float: left;
+}
+
+.top .mail,
+.top .phone{
+  margin: 0 5px ;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.top .right{
+  float: right;
+}
+
+.top .right i{
+  margin: 3px;
+}
+
+nav{
+  background-color: var(--white);
+}
+
+nav .left img{
+  height: 100px;
+}
+
+nav .center{
+  width: 75%;
+  margin: 10px 23px;
+  font-size: 18px;
+}
+
+nav .center ul li{
+  list-style: none;
+  margin-right: 31px;
+  margin-left: 100px;
+  color: var(--top_bg);
+}
+
+nav .center ul li a{
+  text-decoration: none;
+  color: var(--top_bg);
+}
+
+nav .right{
+  margin-top: 27px;
+}
+
+nav .right i{
+  margin-left: 15px;
+  position: relative;
+}
+
+span.counter{
+  position: absolute;
+  top: -15px;
+  right: -25px;
+  margin: 2px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  background-color: var(--light_color);
+  border-radius: 14px;
+  padding: 2px;
+  width: 32px;
+  text-align: center;
+}
+
+header{
+  background-color: var(--header_bg);
+  height: calc(100vh - 120px); /*???????*/
+}
+
+header .left,
+header .right{
+  width: 50%;
+}
+
+/* header .right img{
+  max-width: 100%;
+} */
+
+header .left{
+  text-align: left;
+  margin-top: 70px;
+} 
+
+ header .right img{
+  width: 88%;
+  margin-left: 100px;
+}
+
+
+
+
+
+.section{
+  background-color: var(--white);
+  height: calc(100vh - 0px);  /*???????*/
+  width: 100%;
+}
+
+.paragraph{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-weight: 200;
+}
+
+.section .left img,
+.section .center img,
+.section .right img{
+  border-radius: 125px;
+  margin: 63px;
+  margin-bottom: 25px;
+  width: 250px;
+  text-align: center;
+}
+
+.section .text{
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.button{
+  margin-left: 138px;
+  background-color: var(--brand_color);
+  color: var(--white);
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  padding-bottom: 3px;
+  height: 37px;
+  width: 100px;
+  font-weight: 200;
+}
+
+
+
+
+.feature{
+  background-color: hsl(215deg 38% 94%);
+  height: calc(100vh - -60px);  
+  width: 100%;
+} 
+
+.feature .left,
+.feature .center,
+.feature .right{
+  background-color: var(--white);
+  width: 345px;
+  margin-top: 30px;
+  margin-right: -10px;
+  margin-left: 44px;
+  font-weight: 300;
+  border-radius: 5px;
+}
+
+.feature .left img,
+.feature .center img,
+.feature .right img{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 345px; 
+}
+
+.feature .left .info,
+.feature .center .info,
+.feature .right .info{
+  padding-left: 14px;
+  padding-bottom: 40px;
+  padding-right: 10px;
+}
+
+.feature .rating{
+  margin-top: 16px;
+}
+
+.feature .price{
+  text-align: right;
+  margin-top: -19px;
+  color: var(--light_color);
+}
+
+.feature h2{
+  margin-top: 22px;
+  margin-bottom: -14px;
+  font-size: 1.74rem;
+}
+
+.feature span{
+  color: var(--light_color);
+}
+
+
+
+
+footer{
+  background-color: var(--footer_bg);
+  color: var(--footer_color);
+  font-size: 1.1rem;
+  font-weight: 200;
+  /* height: calc(100vh - 0px); */
+  width: 100%;
+}
+
+footer .left,
+footer .center,
+footer .right{
+  width: 353px;
+  margin-top: 35px;
+  margin-left: 11px;
+  margin-right: 18px;
+}
+
+.zay_shop{
+  color: var(--brand_color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-left: 38px;
+  padding-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: hsl(217deg 18% 30%);
+}
+
+.products , .further_info{
+  margin-left: 35px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: hsl(217deg 18% 30%);
+}
+
+footer li{
+  margin-bottom: 15px;
+}
+
+footer .first_section{
+  border: none;
+  border-bottom: 1px solid;
+  border-color: hsl(217deg 18% 30%);
+  margin-bottom: 20px;
+}
+
+footer .second_section{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+footer .icons i{
+  background-color: var(--footer_bg);
+  font-size: 25px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 40px;
+  padding: 8px;
+  margin-right: 12px;
+  border-color: hsl(217deg 18% 30%);
+}
+
+footer form{
+  float: right;
+  margin-top: -40px;
+}
+
+footer form input{
+  background-color: var(--footer_bg);
+  border: 1px solid;
+  border-color: hsl(217deg 18% 30%);
+  color: var(--footer_color);
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  padding-bottom: 2px;
+}
+
+footer form button{
+  background-color: var(--brand_color);
+  color: var(--footer_color);
+  border: none;
+  height: 40px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: -10px;
+}
+
+.last_footer{
+  height: 80px;
+  background-color: var(--last_footer);
+  color: var(--footer_color);
+}
+
+.last_footer .copyright{
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding-top: 25px;
+}
+
+.last_footer a{
+  text-decoration: underline;
+}
