@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    /* font-family: 'Lobster', sans-serif; */
+}
+
+:root {
+    --bg: #fffbf2;
+    --bg2: #343a40;
+    --border_color:#434a51;
+    --overlay_color: #21272d;
+    --overlay_color_2: #32383e;
+    --white: #fff;
+    --red: #ff214f;
+    --light_color: #cbcdcf;
+    --light_color2: #a2b1ba;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--red);
+}
+
+i {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    padding: 0 1% 0 1%;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+/* ========================================================================= */
+
+@media (max-width: 500px) {
+    * {
+        font-size: 0.7rem;
+    }
+
+    .nav_container {
+        flex-direction: column;
+    }
+
+    nav .nav_container img {
+        width: 10%;
+    }
+
+    nav .nav_content{
+        width: 100%;
+        margin-top: 3%;
+    }
+    nav .nav_content ul{
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .top .foodhut button {
+        font-size: .7rem;
+        padding: 0.5% 0.8% !important;
+    }
+
+    .menu .menu_images img {
+        width: 70%;
+    }
+
+    .book form .inputs input{
+        width: 60%;
+        margin: 2% 0;
+    }
+
+    .events .cards_container {
+        flex-direction: column;
+    }
+    .events .cards .card{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+    .events .button_event {
+        flex-direction: column;
+    }
+
+    .reviews .reviews_container {
+        flex-direction: column;
+    }
+    .reviews .reviews_container .text {
+        width: 80%;
+        margin: auto;
+    }
+
+    .find{
+        flex-direction: column;
+    }
+    .find .find_content {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 30% !important;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+    .contact .info{
+        margin: 3% 0;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    .nav_container {
+        flex-direction: column;
+    }
+
+    nav .nav_content {
+        width: 60%;
+        margin-top: 3%;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .top .foodhut button {
+        font-size: .7rem;
+        padding: 1% 2% !important;
+    }
+
+    .menu .menu_images img {
+        width: 30%;
+    }
+
+    .book form .inputs input{
+        width: 60%;
+        margin: 2% 0;
+    }
+
+    .events .cards_container {
+        flex-direction: column;
+    }
+    .events .cards .card{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+
+    .find{
+        flex-direction: column;
+    }
+    .find .find_content {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 30% !important;
+    }
+}
+
+/* ========================================================================= */
+
+.top {
+    background: url(../imgs/main.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--overlay_color);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+nav {
+    padding: 1% 0;
+}
+
+.nav_content {
+    color: var(--white);
+    width: 40%;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 7% 0 0%;
+    font-weight: 700;
+}
+
+nav img {
+    width: 8%;
+}
+
+.foodhut button {
+    font-size: 1.3rem;
+}
+
+/* ========================================================================= */
+
+
+.about_img{
+    background: url(../imgs/about-section.jpg) no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.about_text {
+    background-color: var(--bg2);
+    padding: 8% 8%;
+}
+
+.about_text h3 {
+    font-size: 2rem;
+}
+
+.about_text p {
+    margin-top: 10%;
+    font-weight: 600;
+}
+
+/* ========================================================================= */
+
+.menu {
+    background-color: var(--bg2);
+}
+
+.menu_images img {
+    width: 24%;
+}
+
+/* ========================================================================= */
+
+.book {
+    padding: 5% 0;
+    background: url(../imgs/book-table-img.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.book .overlay {
+    background-color: var(--overlay_color_2);
+    position: absolute;
+    inset: 0;
+    opacity: 0.8;
+    z-index: -2;
+}
+
+form input {
+    background-color: #ffffff00;
+    color: var(--white);
+    outline: none;
+    border: 2px solid var(--white);
+    width: 20%;
+    font-size: 1.5rem;
+    padding: 1% 1%
+}
+
+::placeholder {
+    color: var(--white);
+    opacity: 0.5;
+}
+
+/* ========================================================================= */
+
+.events{
+    background-color: var(--bg2);
+    padding: 5% 0;
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 2% 4%;
+    margin: 6% 0;
+}
+.price::before{
+    content: "$ ";
+}
+
+.card{
+    width: 30%;
+    border: 2px solid var(--border_color);
+}
+
+.card-body{
+    background-color: var(--bg2);
+}
+
+/* ========================================================================= */
+
+.reviews{
+    background-color: var(--bg2);
+    padding: 3% 0 5% 0;
+}
+
+.reviews .text{
+    width: 30%;
+}
+
+.job{
+    color: var(--light_color);
+}
+
+.reviews .content{
+    margin-top: 3%;
+    border: 2px solid var(--border_color);
+    border-top: 3px solid var(--red);
+}
+
+/* ========================================================================= */
+
+.find{
+    border: 2px solid var(--border_color);
+    border-left: 0;
+    border-right: 0;
+    background-color: var(--bg2);
+}
+
+.map{
+    background: url(../imgs/Google-Map-US_10.webp) no-repeat;
+    background-size: cover;
+}
+
+.find ul{
+    color: var(--light_color2);
+    padding-left: 0;
+}
+
+.find .find_content{
+    padding: 10% 3%;
+    width: 50%;
+}
+/* ========================================================================= */
+
+.contact{
+    background-color: var(--bg2);
+    padding: 5% 0;
+}
+
+/* ========================================================================= */
+
+footer{
+    background-color: var(--bg2);
+    border-top: 2px solid var(--border_color);
+    color: var(--light_color2);
+}
